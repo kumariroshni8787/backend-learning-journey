@@ -265,3 +265,72 @@ Operator	Meaning	                Example
 * Rules for naming variables properly
 * Different types of operators
 * Arithmetic operators with examples.
+
+
+
+
+# 📘 backend-learning-journey — Day 5
+
+## 🧠 Topic: JavaScript Variables, Data Types & Console Output
+
+## 1. Variables in JavaScript
+
+In JavaScript, variables are used to store data.
+
+### Example:
+
+* var fullName = "Roshni";
+* var x = 10;
+* var age = 23.5;
+* var isEngineer = true;
+
+### 📌 Types of data used here:
+* String → "Roshni"
+* Number → 10, 23.5
+* Boolean → true
+
+## 2. JavaScript is a Dynamic Typed Language
+
+* JavaScript automatically detects the data type of a variable.
+
+### Example:
+
+var c = 30;
+c = "Now I am a string";
+
+👉 Same variable can hold different types of values.
+
+## 3. Printing Output using console.log()
+
+There are multiple ways to print output in JavaScript.
+
+### ✅ Method 1: String Concatenation
+console.log("the value of x is " + x + " and y is " + y);
+
+👉 Uses + to join strings and variables.
+
+⚠️ Note: If y is not defined, it will give an error.
+
+### ✅ Method 2: Comma Separation
+console.log("the value of x is", x, "and y is", y);
+
+👉 Automatically adds spaces between values.
+
+### ✅ Method 3: Template Literals (Recommended)
+console.log(`the value of x is ${x} and y is ${y}`);
+
+👉 Uses backticks (`) and ${} for variables.
+
+### 4. Expression inside Template Literals
+console.log(`${x} + ${y} = ${x + y}`);
+
+👉 You can directly perform operations inside ${}.
+
+
+## 🧾 Summary of the Day
+* Learned about variables in JavaScript
+* Understood different data types (string, number, boolean)
+* Learned that JavaScript is dynamically typed
+* Explored different ways to use console.log()
+* Practiced template literals (best modern method)
+* Understood common errors due to undefined variables
