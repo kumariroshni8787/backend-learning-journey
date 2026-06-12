@@ -756,3 +756,90 @@ while (count > 0) {
 ## 🧠 Summary of Day 12
 
 Today I learned about the while loop in JavaScript, how it works, its syntax, and how it repeats code until a condition becomes false. Also learned how to avoid infinite loops and use counters properly.
+
+
+
+
+# 📘 Day 13 - Nested While Loop (Loop Inside Loop)
+
+
+## 🔁 What is a Nested While Loop?
+A nested while loop means a while loop inside another while loop.
+* The outer loop runs first
+* For every single run of the outer loop, the inner loop completes fully
+
+## ⚙️ Syntax
+
+while (condition1) {
+  while (condition2) {
+    // code
+  }
+}
+
+## 🧠 How it works
+* Outer loop starts
+* Inner loop runs completely
+* Outer loop moves to next step
+* Inner loop again runs fully
+* Repeats until outer loop ends
+
+## 💻 Example 1: Basic Nested While Loop
+let i = 1;
+
+while (i <= 3) {
+  let j = 1;
+
+  while (j <= 3) {
+    console.log("i = " + i + ", j = " + j);
+    j++;
+  }
+
+  i++;
+}
+
+### 📌 Output
+i = 1, j = 1
+i = 1, j = 2
+i = 1, j = 3
+i = 2, j = 1
+i = 2, j = 2
+i = 2, j = 3
+i = 3, j = 1
+i = 3, j = 2
+i = 3, j = 3
+
+## 💻 Example 2: Pattern Printing (Star Pattern)
+let i = 1;
+
+while (i <= 5) {
+  let j = 1;
+  let row = "";
+
+  while (j <= i) {
+    row += "* ";
+    j++;
+  }
+
+  console.log(row);
+  i++;
+}
+
+### 📌 Output
+*
+* *
+* * *
+* * * *
+* * * * *
+
+## ⚠️ Important Points
+* Always reset inner loop variable (j = 1) inside outer loop
+* Otherwise loop will not work correctly
+* Nested loops increase time complexity
+
+## 🧠 Summary of Day 13
+
+Today I learned about nested while loops, where one loop runs inside another loop. I also practiced printing patterns like star patterns and understood how inner and outer loops work together.
+
+
+
+
