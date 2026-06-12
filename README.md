@@ -334,3 +334,70 @@ console.log(`${x} + ${y} = ${x + y}`);
 * Explored different ways to use console.log()
 * Practiced template literals (best modern method)
 * Understood common errors due to undefined variables
+
+
+
+
+
+# 📘 backend-learning-journey — Day 6
+
+## 🧠 Topic: JavaScript String Concatenation
+
+In Day 6, we practiced String Concatenation in JavaScript.
+
+String concatenation means joining two or more strings together.
+
+🔗 String Concatenation
+## 1. Using + Operator
+var firstName = "Roshni";
+var lastName = "Kumari";
+
+console.log(firstName + lastName);
+
+👉 Output:
+
+RoshniKumari
+
+## 2. Adding Space Between Strings
+console.log(firstName + " " + lastName);
+
+👉 Output:
+
+Roshni Kumari
+
+## 3. With Extra Text
+var city = "Ramgarh";
+
+console.log("My name is " + firstName + " " + lastName + " and I live in " + city);
+
+## 4. Concatenation with Numbers
+var age = 23;
+
+console.log("My age is " + age);
+
+👉 Number is automatically converted into string.
+
+## 5. Mixed Example
+var x = 10;
+var y = 20;
+
+console.log("The sum of " + x + " and " + y + " is " + (x + y));
+
+👉 Output:
+
+The sum of 10 and 20 is 30
+
+### ⚠️ Important Concept
+
+👉 If you use + with strings, JavaScript converts everything into a string.
+
+### Example:
+
+"10" + 5  // "105"
+
+## 🧾 Summary of the Day
+* Learned string concatenation using +
+* Understood how to join multiple strings
+* Learned to add space between strings
+* Practiced mixing strings and numbers
+* Understood type conversion in JavaScript
