@@ -463,3 +463,77 @@ console.log(x); // 8
 ## 📌 Day 7 Summary
 
 Today I learned about Assignment Operators in JavaScript. I studied the basic assignment operator = and compound operators like +=, -=, *=, /=, %= and **= which help in updating variable values in a shorter way.
+
+
+
+
+
+# 📘 Day 8: Comparison Operators, Logical Operators & Operator Precedence
+
+## 📌 What I Learned
+
+Today I learned about Comparison Operators, Logical Operators, and Operator Precedence in JavaScript. These operators help us make decisions in code by comparing values and combining multiple conditions.
+
+## 🧠 Key Concepts
+## 🔍 Comparison Operators
+
+Comparison operators are used to compare two values and return a boolean (true or false).
+
+* == → equal to (checks value only)
+* === → strict equal to (checks value + type)
+* != → not equal
+* !== → strict not equal
+* > → greater than
+* < → less than
+* >= → greater than or equal to
+* <= → less than or equal to
+
+## 🔗 Logical Operators
+
+Logical operators are used to combine multiple conditions.
+
+* && → AND (both conditions must be true)
+* || → OR (at least one condition must be true)
+* ! → NOT (reverses the result)
+
+Example:
+
+let age = 20;
+
+console.log(age > 18 && age < 30); // true
+console.log(age > 18 || age < 10); // true
+console.log(!(age > 18)); // false
+
+## ⚖️ Operator Precedence
+
+Operator precedence means which operator is evaluated first in an expression.
+
+Order (high to low priority):
+
+() → parentheses
+! → NOT
+* / %
++ -
+> < >= <=
+== === != !==
+&&
+||
+
+### Example:
+
+let result = 10 + 5 > 12 && 5 < 3;
+console.log(result); // false
+
+## ⚙️ Important Notes
+* === is always safer than == because it checks type also.
+* Logical operators are widely used in conditions (if, while, etc.).
+* Always use parentheses () to make complex expressions clear.
+* Operator precedence helps JavaScript decide evaluation order automatically.
+
+## 🧾 Summary
+
+Today I learned how to compare values using comparison operators and combine conditions using logical operators. I also learned how operator precedence decides the order in which expressions are evaluated in JavaScript. These concepts are very important for writing correct conditions in backend logic.
+
+
+
+

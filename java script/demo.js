@@ -1,30 +1,28 @@
-// Day 7: Assignment Operators in JavaScript
+// Day 8: Comparison Operators, Logical Operators & Operator Precedence
 
-// 1. Basic Assignment Operator (=)
-let a = 10;
-console.log("Initial value of a:", a);
+let age = 22;
+let marks = 75;
+let isStudent = true;
 
-// 2. Add and Assign (+=)
-a += 5; // a = a + 5
-console.log("After a += 5:", a);
+// Comparison Operators
+console.log("age > 18 :", age > 18);      // true
+console.log("marks >= 50 :", marks >= 50); // true
+console.log("age == '22' :", age == "22"); // true
+console.log("age === '22' :", age === "22"); // false
+console.log("age != 18 :", age != 18); // true
+console.log("age !== '18' :", age !== "18"); // true
 
-// 3. Subtract and Assign (-=)
-a -= 3; // a = a - 3
-console.log("After a -= 3:", a);
+// Logical Operators
+console.log("age > 18 && marks >= 50 :", age > 18 && marks >= 50); // true
+console.log("age < 18 || marks >= 50 :", age < 18 || marks >= 50); // true
+console.log("!isStudent :", !isStudent); // false
 
-// 4. Multiply and Assign (*=)
-a *= 2; // a = a * 2
-console.log("After a *= 2:", a);
+// Operator Precedence
+let result = age > 18 && marks >= 50 || false;
 
-// 5. Divide and Assign (/=)
-a /= 4; // a = a / 4
-console.log("After a /= 4:", a);
+console.log("Result :", result);
 
-// 6. Modulus and Assign (%=)
-a %= 3; // a = a % 3
-console.log("After a %= 3:", a);
+// Using Parentheses to Control Precedence
+let result2 = age > 18 && (marks < 50 || isStudent);
 
-// 7. Exponent and Assign (**=)
-let b = 2;
-b **= 3; // b = b ** 3
-console.log("Value of b after b **= 3:", b);
+console.log("Result2 :", result2);
