@@ -943,3 +943,76 @@ console.log("Sum:", sum);
 ## 🧾 Summary (Day 16)
 
 Today I practiced JavaScript for loops with basic coding problems.
+
+
+
+
+# 📘 Day 17: JavaScript Math.floor()
+
+
+## 🧠 Topic: Math.floor() in JavaScript
+
+* Today I learned about Math.floor(), a built-in JavaScript method used to round numbers down to the nearest whole number.
+* It is part of the Math object in JavaScript.
+
+## 🔢 What is Math.floor()?
+Math.floor() removes the decimal part and always rounds the number downward.
+
+👉 Syntax:
+Math.floor(number)
+
+## 💡 Example 1: Basic Usage
+console.log(Math.floor(4.9));console.log(Math.floor(4.1));console.log(Math.floor(4.0));
+Output:
+444
+
+## 📉 Important Behavior
+InputOutputReason4.94rounds down4.14rounds down4.04already whole number
+
+## ⚠️ Negative Numbers
+Math.floor() also works with negative numbers, but it still rounds down (towards -infinity).
+
+console.log(Math.floor(-4.1));console.log(Math.floor(-4.9));
+Output:
+-5-5
+
+## 🧪 Example 3: Using Math.floor in real cases
+
+👉 Random number (0–9)
+let randomNumber = Math.floor(Math.random() * 10);console.log(randomNumber);
+Explanation:
+
+
+Math.random() → gives 0 to 0.999...
+
+
+* 10 → makes range 0 to 9.999...
+
+
+Math.floor() → converts it to 0 to 9
+
+
+
+## 🚀 Where Math.floor is used
+
+
+* Random number generation
+
+
+* Pagination systems
+
+
+* Splitting data into chunks
+
+
+* Games and logic calculations
+
+
+* Rounding down prices or values
+
+
+
+## 🧾 Summary (Day 17)
+Today I learned about Math.floor() in JavaScript. It is used to round numbers down to the nearest integer. I also learned how it behaves with positive and negative numbers and how it is commonly used with Math.random() in real-world applications.
+
+
