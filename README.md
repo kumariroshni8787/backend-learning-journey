@@ -684,3 +684,75 @@ The goal is to improve logic building using real problems.
 * Solved basic logic problems
 * Improved decision-making in JavaScript
 * Strengthened fundamentals for backend development
+
+
+
+
+# 📘 Day 12 - While Loop in JavaScript
+
+🔁 What is a Loop in Programming?
+
+* A loop is a programming concept used to repeat a block of code multiple times until a condition is met.
+
+* Instead of writing the same code again and again, we use loops to make programs shorter and smarter.
+
+🔁 What is a While Loop?
+
+* A while loop is used in JavaScript to repeat a block of code as long as a condition is true.
+
+It checks the condition before each iteration.
+
+## ⚙️ Syntax
+while (condition) {
+  // code to run
+}
+
+## 🧠 How it works
+* Check the condition
+* If true → run the code inside the loop
+* Repeat again
+* Stop when condition becomes false
+
+## 💻 Example 1: Basic While Loop
+let i = 1;
+
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+
+📌 Output:
+
+1
+2
+3
+4
+5
+## 💻 Example 2: Countdown
+let count = 5;
+
+while (count > 0) {
+  console.log(count);
+  count--;
+}
+
+📌 Output:
+
+5
+4
+3
+2
+1
+
+## ⚠️ Important Points
+* If condition never becomes false → infinite loop
+* Always update the variable inside the loop
+* Used when number of iterations is not fixed
+
+## 🔥 Difference: while vs for loop
+* while loop → used when condition-based looping
+* for loop → used when iteration count is known
+
+## 🧠 Summary of Day 12
+
+Today I learned about the while loop in JavaScript, how it works, its syntax, and how it repeats code until a condition becomes false. Also learned how to avoid infinite loops and use counters properly.
