@@ -537,3 +537,23 @@ Today I learned how to compare values using comparison operators and combine con
 
 
 
+# Day 09 - Practice Session
+
+Day 09 was dedicated to practicing the concepts learned on Day 08.
+
+## Topics Practiced
+* Comparison Operators (>, <, >=, <=, ==, ===, !=, !==)
+* Logical Operators (&&, ||, !)
+* Operator Precedence
+* Using Parentheses in Conditions
+* Evaluating Boolean Expressions
+* Practice Goal
+
+The focus was on understanding how JavaScript evaluates conditions and predicting outputs before running the code.
+
+## Summary
+
+* Strengthened understanding of comparison operators.
+* Practiced writing and evaluating logical expressions.
+* Improved understanding of operator precedence.
+* Learned to use parentheses for better readability and predictable results.
