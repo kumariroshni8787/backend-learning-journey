@@ -1,11 +1,11 @@
 // let i = 1;
 
-// while (i <= 5) {
+// while (i <= 3) {
 //   let j = 1;
 //   let row = "";
 
-//   while (j <= 5) {
-//     row += (i * j) + "\t";
+//   while (j <= 3) {
+//     row += "* ";
 //     j++;
 //   }
 
@@ -14,27 +14,14 @@
 // }
 
 
+//Reverse a Number using While Loop (JavaScript)
+let num = 256;
+let reverse = 0;
 
-let i = 1;
-
-while (i <= 6) {
-  let j = 1;
-  let row = "";
-
-  // spaces
-  while (j <= 6 - i) {
-    row += " ";
-    j++;
-  }
-
-  let k = 1;
-
-  // stars
-  while (k <= i) {
-    row += "* ";
-    k++;
-  }
-
-  console.log(row);
-  i++;
+while (num > 0) {
+  let digit = num % 10;
+  reverse = (reverse * 10) + digit;
+  num = Math.floor(num / 10);
 }
+
+console.log(reverse);

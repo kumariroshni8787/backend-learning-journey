@@ -843,3 +843,12 @@ Today I learned about nested while loops, where one loop runs inside another loo
 
 
 
+# 📘 Day 14 - Practice (Loops Revision: while + Nested while)
+
+🔁 What was practiced today?
+Today’s practice focuses on while loops and nested while loops to strengthen logic building.
+
+
+## 🧠 Summary of Day 14
+
+Today I practiced basic and nested while loops, including number printing, reverse counting, multiplication tables, and simple star patterns. This helped strengthen loop logic and control flow understanding.
