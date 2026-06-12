@@ -1,57 +1,107 @@
-// // Object Example
+// Student Data Management using Arrays
 
-// var student = {
-//     isEngineer: true,
-//     contact: {
-//         at: 'ranchi, jharkhand',
-//         phone: '9876543210',
-//         email: 'sk@gmail.com'
-//     },
-//     favFood: ['dal', 'roti', 'alu']
-// }
+const students = [
+    "Satya",
+    "Rahul",
+    "Aman",
+    "Priya"
+];
 
-// console.log(student)                 // Complete object
-// console.log(student.name)            // undefined
-// console.log(student.contact)         // Nested object
-// console.log(student.contact.phone)   // Phone number
+console.log("Original Array:");
+console.log(students);
 
-// // Bracket Notation
-// console.log(student["contact"]["email"])
+console.log("\n-------------------");
 
+// Accessing Elements
+console.log("First Student:", students[0]);
+console.log("Second Student:", students[1]);
 
+console.log("\n-------------------");
 
-//Spread Operator Example
-const d1 = {
-    name: 'satya raj',
-    email: 'sk@gmail.com'
+// Updating Element
+students[1] = "Rohit";
+
+console.log("After Update:");
+console.log(students);
+
+console.log("\n-------------------");
+
+// Adding Elements
+students.push("Neha");
+students.push("Ankit");
+
+console.log("After push():");
+console.log(students);
+
+console.log("\n-------------------");
+
+// Removing Last Element
+students.pop();
+
+console.log("After pop():");
+console.log(students);
+
+console.log("\n-------------------");
+
+// Adding at Beginning
+students.unshift("Admin");
+
+console.log("After unshift():");
+console.log(students);
+
+console.log("\n-------------------");
+
+// Removing First Element
+students.shift();
+
+console.log("After shift():");
+console.log(students);
+
+console.log("\n-------------------");
+
+// Array Length
+console.log("Total Students:", students.length);
+
+console.log("\n-------------------");
+
+// Loop Through Array
+console.log("Student List:");
+
+for (let i = 0; i < students.length; i++) {
+    console.log(`${i + 1}. ${students[i]}`);
 }
 
-const d2 = {
-    phone: '9876544',
-    address: 'ranchi, jharkhand'
-}
+console.log("\n-------------------");
 
-const data = {
-    ...d1,
-    ...d2
-}
+// Checking if Array Includes Value
+console.log("Contains Satya?", students.includes("Satya"));
+console.log("Contains Karan?", students.includes("Karan"));
 
-console.log(data)
+console.log("\n-------------------");
 
+// Finding Index
+console.log("Index of Satya:", students.indexOf("Satya"));
 
-//Overwriting Example with Spread Operator
+console.log("\n-------------------");
 
-// const a = {
-//     name: 'Satya'
-// }
+// Converting Array to String
+console.log("Joined Array:");
+console.log(students.join(", "));
 
-// const b = {
-//     name: 'Raj'
-// }
+console.log("\n-------------------");
 
-// const result = {
-//     ...a,
-//     ...b
-// }
+// Reverse Array
+console.log("Reversed Array:");
+console.log([...students].reverse());
 
-// console.log(result)
+console.log("\n-------------------");
+
+// Sorting Array
+console.log("Sorted Array:");
+console.log([...students].sort());
+
+console.log("\n-------------------");
+
+// Final Array
+console.log("Final Students Data:");
+console.log(students);
