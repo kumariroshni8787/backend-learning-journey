@@ -923,3 +923,23 @@ i = 3 → loop stops (condition false)
 ## 🧾 Summary (Day 15)
 
 Today I learned about the for loop in JavaScript, how it works, its syntax, and how to use it for repeating tasks and looping through arrays. It is a fundamental concept used in backend development for handling repetitive operations efficiently.
+
+
+
+
+# 📘 Day 16: JavaScript Practice Questions 
+
+
+##  Question : Sum of first 5 natural numbers
+Find the sum of numbers from 1 to 5 using a loop.
+### answer
+let sum = 0;
+
+for (let i = 1; i <= 5; i++) {
+    sum += i;
+}
+
+console.log("Sum:", sum);
+## 🧾 Summary (Day 16)
+
+Today I practiced JavaScript for loops with basic coding problems.
