@@ -557,3 +557,104 @@ The focus was on understanding how JavaScript evaluates conditions and predictin
 * Practiced writing and evaluating logical expressions.
 * Improved understanding of operator precedence.
 * Learned to use parentheses for better readability and predictable results.
+
+
+
+
+
+
+# 📘 Day 10 – JavaScript Conditional Statements (if, else, else if)
+
+## 🧠 What are Conditional Statements?
+
+Conditional statements are used to make decisions in code.
+
+They allow your program to run different blocks of code based on conditions.
+
+### In JavaScript, the main conditional statements are:
+
+* if
+* else
+* else if
+
+## 🔹 1. if Statement
+
+The if statement runs a block of code only when the condition is true.
+
+### Syntax:
+if (condition) {
+  // code runs if condition is true
+}
+
+### Example:
+let age = 18;
+
+if (age >= 18) {
+  console.log("You are an adult");
+}
+
+
+## 🔹 2. if...else Statement
+
+If the condition is false, the else block runs.
+
+### Syntax:
+if (condition) {
+  // true block
+} else {
+  // false block
+}
+
+### Example:
+let age = 16;
+
+if (age >= 18) {
+  console.log("You are an adult");
+} else {
+  console.log("You are a minor");
+}
+
+## 🔹 3. if...else if...else Statement
+
+Used when there are multiple conditions.
+
+### Syntax:
+if (condition1) {
+  // code block 1
+} else if (condition2) {
+  // code block 2
+} else {
+  // default code block
+}
+
+### Example:
+let marks = 75;
+
+if (marks >= 90) {
+  console.log("Grade A");
+} else if (marks >= 70) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
+}
+## 🔹 Important Points
+* Conditions always return true or false
+* JavaScript uses comparison operators like:
+==, ===
+>, <, >=, <=
+Only one block runs in if-else if chain
+
+### 🧪 Real-life Example
+let isLoggedIn = true;
+
+if (isLoggedIn) {
+  console.log("Welcome back!");
+} else {
+  console.log("Please login first");
+}
+
+## 📌 Summary (Day 10)
+* Learned about conditional statements in JavaScript
+* Used if, else, and else if
+* Understood decision-making in programming
+* Practiced real-world logic examples
