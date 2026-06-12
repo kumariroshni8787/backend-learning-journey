@@ -1476,3 +1476,613 @@ Today you learned how JavaScript objects work, including nested objects and arra
 
 
 
+
+
+# Day 21 - JavaScript Arrays
+
+## Introduction
+
+Today I learned about JavaScript Arrays. Arrays are used to store multiple values in a single variable. They help organize related data and make it easier to access, update, and manipulate multiple items.
+
+---
+
+## What is an Array?
+
+An array is a special variable that can hold more than one value.
+
+### Example
+
+```javascript
+const fruits = ['Apple', 'Banana', 'Mango'];
+
+console.log(fruits);
+```
+
+### Output
+
+```javascript
+[ 'Apple', 'Banana', 'Mango' ]
+```
+
+---
+
+## Accessing Array Elements
+
+Array elements are accessed using their index number.
+
+> Note: Array indexing starts from `0`.
+
+```javascript
+const fruits = ['Apple', 'Banana', 'Mango'];
+
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+```
+
+### Output
+
+```javascript
+Apple
+Banana
+Mango
+```
+
+---
+
+## Updating Array Elements
+
+```javascript
+const fruits = ['Apple', 'Banana', 'Mango'];
+
+fruits[1] = 'Orange';
+
+console.log(fruits);
+```
+
+### Output
+
+```javascript
+[ 'Apple', 'Orange', 'Mango' ]
+```
+
+---
+
+## Array Length
+
+The `length` property returns the total number of elements in an array.
+
+```javascript
+const fruits = ['Apple', 'Banana', 'Mango'];
+
+console.log(fruits.length);
+```
+
+### Output
+
+```javascript
+3
+```
+
+---
+
+## Common Array Methods
+
+### 1. push()
+
+Adds an element at the end of the array.
+
+```javascript
+const fruits = ['Apple', 'Banana'];
+
+fruits.push('Mango');
+
+console.log(fruits);
+```
+
+Output:
+
+```javascript
+[ 'Apple', 'Banana', 'Mango' ]
+```
+
+---
+
+### 2. pop()
+
+Removes the last element.
+
+```javascript
+const fruits = ['Apple', 'Banana', 'Mango'];
+
+fruits.pop();
+
+console.log(fruits);
+```
+
+Output:
+
+```javascript
+[ 'Apple', 'Banana' ]
+```
+
+---
+
+### 3. unshift()
+
+Adds an element at the beginning.
+
+```javascript
+const fruits = ['Banana', 'Mango'];
+
+fruits.unshift('Apple');
+
+console.log(fruits);
+```
+
+Output:
+
+```javascript
+[ 'Apple', 'Banana', 'Mango' ]
+```
+
+---
+
+### 4. shift()
+
+Removes the first element.
+
+```javascript
+const fruits = ['Apple', 'Banana', 'Mango'];
+
+fruits.shift();
+
+console.log(fruits);
+```
+
+Output:
+
+```javascript
+[ 'Banana', 'Mango' ]
+```
+
+---
+
+## Looping Through Arrays
+
+### Using for Loop
+
+```javascript
+const fruits = ['Apple', 'Banana', 'Mango'];
+
+for(let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+```
+
+Output:
+
+```javascript
+Apple
+Banana
+Mango
+```
+
+---
+
+## Arrays Can Store Different Data Types
+
+```javascript
+const data = [
+    'Satya',
+    21,
+    true,
+    { city: 'Ranchi' }
+];
+
+console.log(data);
+```
+
+---
+
+## Important Points
+
+1. Arrays store multiple values in a single variable.
+2. Array indexing starts from `0`.
+3. Use `length` to find the number of elements.
+4. `push()` adds elements at the end.
+5. `pop()` removes elements from the end.
+6. `unshift()` adds elements at the beginning.
+7. `shift()` removes elements from the beginning.
+8. Arrays can store different data types.
+
+---
+
+## Interview Notes
+
+### What is an Array?
+
+An array is a data structure used to store multiple values in a single variable.
+
+### Does Array Index Start From 1?
+
+No. Array indexing starts from `0`.
+
+### Which Method Adds an Element at the End?
+
+`push()`
+
+### Which Method Removes the Last Element?
+
+`pop()`
+
+---
+
+## Today's Learning
+
+* Created arrays.
+* Accessed array elements using index numbers.
+* Updated array values.
+* Used the `length` property.
+* Learned common array methods.
+* Iterated through arrays using loops.
+* Understood real-world use cases of arrays.
+
+### Day 21 Summary
+
+Today you learned the fundamentals of JavaScript Arrays. You practiced creating arrays, accessing elements through indexes, updating values, and using important methods like push(), pop(), shift(), and unshift(). Arrays are one of the most commonly used data structures in JavaScript and are heavily used in Node.js, Express.js, and MongoDB applications.
+
+
+
+# Day 22 - JavaScript Arrays, Objects, Inventory Analysis & Data Aggregation
+
+## 📅 Day 22
+
+### Topics Covered
+
+* Working with Arrays of Objects
+* Looping through Data using `for` loop
+* Calculating Total Product Quantity
+* Inventory Investment Calculation
+* Profit and Loss Analysis
+* Filtering Products
+* Grouping Data by Category
+* Object-based Data Aggregation
+
+---
+
+# Product Inventory Dataset
+
+We worked with an array of product objects where each product contains:
+
+```javascript
+{
+  id: 1,
+  name: "Wireless Mouse",
+  cp: 450,
+  sp: 650,
+  category: "Electronics",
+  quantity: 25
+}
+```
+
+### Fields Explanation
+
+| Field    | Meaning                  |
+| -------- | ------------------------ |
+| id       | Unique product ID        |
+| name     | Product name             |
+| cp       | Cost Price               |
+| sp       | Selling Price            |
+| category | Product category         |
+| quantity | Available stock quantity |
+
+---
+
+# 1. Iterating Through Array of Objects
+
+Used a `for` loop to access each product.
+
+```javascript
+for (var i = 0; i < products.length; i++) {
+    console.log(products[i]);
+}
+```
+
+### Purpose
+
+* Read all products one by one.
+* Access object properties.
+* Display product details.
+
+---
+
+# 2. Calculating Total Quantity of Products
+
+```javascript
+var totalProduct = 0;
+
+for (var i = 0; i < products.length; i++) {
+    totalProduct += products[i].quantity;
+}
+
+console.log(totalProduct);
+```
+
+### Logic
+
+* Start with `0`.
+* Add quantity of every product.
+* Final value gives total inventory count.
+
+---
+
+# 3. Calculating Total Investment
+
+Investment means:
+
+```text
+Cost Price × Quantity
+```
+
+```javascript
+var totalInvest = 0;
+
+for (var i = 0; i < products.length; i++) {
+    totalInvest += products[i].cp * products[i].quantity;
+}
+```
+
+### Formula
+
+Total Investment = Σ(Cost Price × Quantity)
+
+---
+
+# 4. Calculating Total Selling Value
+
+```javascript
+var totalSell = 0;
+
+for (var i = 0; i < products.length; i++) {
+    totalSell += products[i].sp * products[i].quantity;
+}
+```
+
+### Formula
+
+Total Selling Value = Σ(Selling Price × Quantity)
+
+---
+
+# 5. Profit and Loss Analysis
+
+## Profit Case
+
+```javascript
+if (totalSell > totalInvest) {
+    var profit = totalSell - totalInvest;
+}
+```
+
+### Profit Formula
+
+```text
+Profit = Selling Value - Investment
+```
+
+### Profit Percentage Formula
+
+```text
+Profit % = (Profit × 100) / Investment
+```
+
+---
+
+## Loss Case
+
+```javascript
+else {
+    var loss = totalInvest - totalSell;
+}
+```
+
+### Loss Formula
+
+```text
+Loss = Investment - Selling Value
+```
+
+### Loss Percentage Formula
+
+```text
+Loss % = (Loss × 100) / Investment
+```
+
+---
+
+# 6. Finding Loss-Making Products
+
+Products where:
+
+```text
+Cost Price > Selling Price
+```
+
+```javascript
+for (var i = 0; i < products.length; i++) {
+    if (products[i].cp > products[i].sp) {
+        console.log(products[i].name);
+    }
+}
+```
+
+### Example
+
+* Mechanical Keyboard
+* Water Bottle
+* Sports Shoes
+* Coffee Mug
+
+These products are being sold at a loss.
+
+---
+
+# 7. Category-wise Quantity Aggregation
+
+Created an object to store total quantity per category.
+
+```javascript
+const productQty = {};
+```
+
+### Logic
+
+```javascript
+for (var i = 0; i < products.length; i++) {
+
+    if (productQty[products[i].category]) {
+
+        productQty[products[i].category] =
+            productQty[products[i].category] +
+            products[i].quantity;
+
+    } else {
+
+        productQty[products[i].category] =
+            products[i].quantity;
+    }
+}
+```
+
+---
+
+## Understanding the Logic
+
+### Step 1
+
+Check whether category already exists.
+
+```javascript
+if(productQty[products[i].category])
+```
+
+Example:
+
+```javascript
+productQty["Electronics"]
+```
+
+---
+
+### Step 2
+
+If category exists
+
+Add current quantity.
+
+```javascript
+productQty["Electronics"] += quantity;
+```
+
+---
+
+### Step 3
+
+If category does not exist
+
+Create category and assign quantity.
+
+```javascript
+productQty["Electronics"] = quantity;
+```
+
+---
+
+## Final Output
+
+```javascript
+{
+  Electronics: 63,
+  Stationery: 100,
+  Accessories: 50,
+  Bags: 20,
+  Home: 75,
+  Footwear: 14,
+  Kitchen: 45
+}
+```
+
+---
+
+# Key Learnings
+
+* Arrays can store multiple objects.
+* Objects can be accessed using dot notation and bracket notation.
+* Loops help process large datasets.
+* Business calculations can be performed using loops.
+* Aggregation means combining data into summarized form.
+* Objects are useful for grouping and counting data.
+* Real-world inventory systems use similar logic.
+
+---
+
+# Interview Questions
+
+### Q1. Difference between Array and Object?
+
+**Array**
+
+* Stores ordered data.
+* Accessed using index.
+
+**Object**
+
+* Stores data as key-value pairs.
+* Accessed using keys.
+
+---
+
+### Q2. Why use aggregation?
+
+Aggregation helps summarize large amounts of data into meaningful information.
+
+Example:
+
+* Total quantity
+* Total sales
+* Total investment
+* Category-wise stock
+
+---
+
+### Q3. What is dynamic object key access?
+
+```javascript
+productQty[products[i].category]
+```
+
+The key is generated dynamically during runtime.
+
+---
+
+# Day 22 Summary
+
+Today I practiced working with arrays of objects and performed real-world inventory management calculations. I learned how to calculate total stock quantity, total investment, total selling value, profit/loss percentage, identify loss-making products, and aggregate category-wise quantities using JavaScript objects and loops.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
