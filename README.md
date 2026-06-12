@@ -1016,3 +1016,108 @@ Math.floor() → converts it to 0 to 9
 Today I learned about Math.floor() in JavaScript. It is used to round numbers down to the nearest integer. I also learned how it behaves with positive and negative numbers and how it is commonly used with Math.random() in real-world applications.
 
 
+
+
+## 📘 Day 18: JavaScript Strings & String Methods
+🧠 Topic: Strings in JavaScript
+
+A string is a sequence of characters used to represent text in JavaScript.
+
+Strings can be written using:
+
+let a = "Hello";
+let b = 'World';
+
+## 🔤 Common String Methods
+
+Today I learned many important string methods used in JavaScript.
+
+📌 1. length
+
+Returns the number of characters in a string.
+
+let name = "Backend";
+console.log(name.length);
+
+📌 2. toUpperCase()
+
+Converts string to uppercase.
+
+let name = "backend";
+console.log(name.toUpperCase());
+
+📌 3. toLowerCase()
+
+Converts string to lowercase.
+
+let name = "BACKEND";
+console.log(name.toLowerCase());
+
+📌 4. trim()
+
+Removes extra spaces from start and end.
+
+let name = "   backend   ";
+console.log(name.trim());
+
+📌 5. slice()
+
+Extracts part of a string.
+
+let text = "JavaScript";
+console.log(text.slice(0, 4));
+
+📌 6. substring()
+
+Similar to slice but does not accept negative indexes.
+
+let text = "JavaScript";
+console.log(text.substring(0, 4));
+
+📌 7. replace()
+
+Replaces a part of string.
+
+let text = "I love Java";
+console.log(text.replace("Java", "JavaScript"));
+
+📌 8. includes()
+
+Checks if a string contains a word.
+
+let text = "I am learning backend";
+console.log(text.includes("learning"));
+
+📌 9. indexOf()
+
+Returns position of first match.
+
+let text = "JavaScript";
+console.log(text.indexOf("S"));
+
+📌 10. charAt()
+
+Returns character at specific index.
+
+let text = "Backend";
+console.log(text.charAt(2));
+
+📌 11. split()
+
+Converts string into array.
+
+let text = "a,b,c,d";
+console.log(text.split(","));
+
+
+## 🚀 Real Use Cases of Strings
+* User input handling
+* Form validation
+* Data cleaning (trim, replace)
+* Searching text (includes)
+* Parsing data (split)
+* Formatting output
+
+## 🧾 Summary (Day 18)
+
+Today I learned about JavaScript strings and important string methods like length, toUpperCase, trim, slice, replace, includes, and split. These methods are very useful for handling text data in backend development.
