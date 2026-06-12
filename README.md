@@ -92,3 +92,70 @@ A program is a set of instructions given to a computer to perform a specific tas
 ### 📌 Day 02 Summary
 
 Aaj humne jaana ki JavaScript se kya kya ban sakta hai, different types of applications (mobile, desktop, web) ka basic idea mila, aur compiler vs interpreter ka difference samjha.
+
+
+
+
+# Day 3 - Compiler vs Interpreter & First JavaScript Code
+
+## 📚 What I Learned
+
+### 1. Compiler vs Interpreter
+
+🔹 Compiler
+
+* A compiler translates the entire code at once into machine code.
+* After compilation, the program runs as a whole.
+* If there is an error, it shows all errors after compilation.
+* Example languages: C, C++
+
+🔹 Interpreter
+* An interpreter runs code line by line.
+* Stops execution when it finds an error.
+* Easier for debugging.
+* Example languages: JavaScript, Python
+
+
+## 🔥 Key Difference
+
+* Compiler → Whole code at once
+* Interpreter → Line by line execution
+
+### 2. JavaScript Execution Style
+* JavaScript uses an interpreter-based execution model (but modern JS engines also optimize using JIT compilation).
+* It executes code step by step in the browser or Node.js.
+
+### 3. Code Editors for JavaScript
+
+We learned about different code editors used for JavaScript development:
+
+* Visual Studio Code (VS Code) ⭐ Most popular
+* Sublime Text
+* Atom
+* Notepad++
+* WebStorm
+
+👉 We installed a code editor and set it up for JavaScript development.
+
+### 4. First JavaScript Program
+
+We wrote our first JavaScript code and printed our name.
+
+* console.log("My Name");
+
+Or example:
+
+* console.log("Rahul");
+
+This prints text in the console.
+
+## 🧠 Key Concepts
+* Compiler processes full code at once before execution.
+* Interpreter executes code line by line.
+* JavaScript runs in an interpreted (and optimized) environment.
+* VS Code is widely used for JavaScript development.
+* console.log() is used to print output in JavaScript.
+
+## 🚀 Summary
+
+Today I learned the difference between compiler and interpreter, explored code editors used for JavaScript development, installed a code editor, and wrote my first JavaScript program to print my name using console.log().
