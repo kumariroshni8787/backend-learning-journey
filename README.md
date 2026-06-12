@@ -1209,3 +1209,270 @@ user.greet();
 ## 🧾 Summary (Day 19)
 
 Today I learned about JavaScript objects, which are used to store structured data in key-value pairs. I practiced accessing, updating, deleting, looping through objects, and using nested objects and methods. Objects are very important in backend development and real-world applications.
+
+
+
+
+# Day 20 - JavaScript Objects and Spread Operator
+
+## Introduction
+
+Today I learned about JavaScript Objects, accessing object properties, nested objects, arrays inside objects, and the Spread Operator (`...`) for merging multiple objects.
+
+---
+
+## 1. JavaScript Objects
+
+An object is used to store data in key-value pairs.
+
+### Example
+
+```javascript
+var student = {
+    isEngineer: true,
+    contact: {
+        at: 'ranchi, jharkhand',
+        phone: '9876543210',
+        email: 'sk@gmail.com'
+    },
+    favFood: ['dal', 'roti', 'alu']
+}
+```
+
+### Understanding the Object Structure
+
+```javascript
+student
+│
+├── isEngineer → true
+├── contact
+│   ├── at → "ranchi, jharkhand"
+│   ├── phone → "9876543210"
+│   └── email → "sk@gmail.com"
+│
+└── favFood
+    ├── "dal"
+    ├── "roti"
+    └── "alu"
+```
+
+---
+
+## 2. Accessing Object Properties
+
+### Dot Notation
+
+```javascript
+console.log(student.contact)
+console.log(student.contact.phone)
+```
+
+Output:
+
+```javascript
+{
+  at: 'ranchi, jharkhand',
+  phone: '9876543210',
+  email: 'sk@gmail.com'
+}
+
+9876543210
+```
+
+---
+
+### Bracket Notation
+
+```javascript
+console.log(student["contact"]["email"])
+```
+
+Output:
+
+```javascript
+sk@gmail.com
+```
+
+---
+
+## 3. Accessing Non-Existing Properties
+
+```javascript
+console.log(student.name)
+```
+
+Output:
+
+```javascript
+undefined
+```
+
+Since the `name` property does not exist inside the object, JavaScript returns `undefined`.
+
+---
+
+## 4. Arrays Inside Objects
+
+Objects can contain arrays as values.
+
+```javascript
+console.log(student.favFood)
+```
+
+Output:
+
+```javascript
+['dal', 'roti', 'alu']
+```
+
+Accessing individual items:
+
+```javascript
+console.log(student.favFood[0])
+```
+
+Output:
+
+```javascript
+dal
+```
+
+---
+
+## 5. Spread Operator (...)
+
+The Spread Operator is used to copy or merge objects and arrays.
+
+### Example
+
+```javascript
+const d1 = {
+    name: 'satya raj',
+    email: 'sk@gmail.com'
+}
+
+const d2 = {
+    phone: '9876544',
+    address: 'ranchi, jharkhand'
+}
+
+const data = {
+    ...d1,
+    ...d2
+}
+
+console.log(data)
+```
+
+Output:
+
+```javascript
+{
+  name: 'satya raj',
+  email: 'sk@gmail.com',
+  phone: '9876544',
+  address: 'ranchi, jharkhand'
+}
+```
+
+---
+
+## How Spread Operator Works
+
+```javascript
+const data = {
+    ...d1,
+    ...d2
+}
+```
+
+JavaScript copies all properties from `d1` and `d2` into a new object.
+
+Equivalent to:
+
+```javascript
+const data = {
+    name: 'satya raj',
+    email: 'sk@gmail.com',
+    phone: '9876544',
+    address: 'ranchi, jharkhand'
+}
+```
+
+---
+
+## Benefits of Spread Operator
+
+* Creates a new object.
+* Easy object merging.
+* Reduces code complexity.
+* Commonly used in React and Node.js projects.
+* Helps maintain immutability.
+
+---
+
+## Important Points
+
+1. Objects store data in key-value pairs.
+2. Nested objects can contain other objects.
+3. Arrays can be stored inside objects.
+4. Dot notation and bracket notation are used to access properties.
+5. Accessing a missing property returns `undefined`.
+6. Spread Operator (`...`) is used to copy and merge objects.
+7. When merging objects, later properties overwrite earlier ones if keys are the same.
+
+Example:
+
+```javascript
+const a = { name: 'Satya' }
+const b = { name: 'Raj' }
+
+const result = {
+    ...a,
+    ...b
+}
+
+console.log(result)
+```
+
+Output:
+
+```javascript
+{ name: 'Raj' }
+```
+
+---
+
+## Interview Notes
+
+### What is an Object in JavaScript?
+
+An object is a collection of key-value pairs used to store related data.
+
+### What is the difference between Dot Notation and Bracket Notation?
+
+* Dot Notation: `student.contact.phone`
+* Bracket Notation: `student["contact"]["phone"]`
+
+### What does the Spread Operator do?
+
+The Spread Operator expands properties of an object or elements of an array and is commonly used for copying and merging data.
+
+---
+
+## Today's Learning
+
+* Created JavaScript objects.
+* Worked with nested objects.
+* Accessed object properties using dot and bracket notation.
+* Learned about arrays inside objects.
+* Understood `undefined` for missing properties.
+* Used the Spread Operator to merge multiple objects into one.
+* Learned practical use cases of object merging.
+
+#### Day 20 Summary
+
+Today you learned how JavaScript objects work, including nested objects and arrays inside objects. You practiced accessing data using both dot notation and bracket notation. You also learned the Spread Operator (...), which allows multiple objects to be merged into a single object efficiently. This is a very important concept that is widely used in modern JavaScript, Node.js, Express.js, and React applications.
+
+
+
