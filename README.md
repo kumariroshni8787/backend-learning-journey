@@ -159,3 +159,109 @@ This prints text in the console.
 ## 🚀 Summary
 
 Today I learned the difference between compiler and interpreter, explored code editors used for JavaScript development, installed a code editor, and wrote my first JavaScript program to print my name using console.log().
+
+
+
+
+
+# 📘 Day 4 - JavaScript Basics (Data Types, Operators, Variables)
+
+## 🧠 Topics Covered
+
+* Data Types in JavaScript
+* Variables
+* Variable Naming Rules
+* Operators
+* Arithmetic Operators (with examples)
+
+## 📌 1. Data Types in JavaScript
+
+JavaScript has different types of data used to store values.
+
+👉 Common Data Types:
+
+* String → Text data
+
+let name = "Rahul";
+
+* Number → Numeric values (integer or decimal)
+
+let age = 20;
+let price = 99.99;
+
+* Boolean → True or False values
+
+let isStudent = true;
+let isLoggedIn = false;
+
+## 📌 2. Variables in JavaScript
+
+A variable is like a container used to store data.
+
+### Example:
+* let name = "Amit";
+* let age = 25;
+
+### Types of variable declarations:
+* let → Modern way (recommended)
+* const → Value cannot be changed
+* var → Old method (avoid using)
+
+## 📌 3. Variable Naming Rules
+
+Follow these rules while naming variables:
+
+### ✅ Allowed:
+* Must start with letter, _, or $
+* Can contain letters, numbers, _, $
+* Case-sensitive
+* let userName;
+* let _age;
+* let $salary;
+
+### ❌ Not Allowed:
+* Cannot start with number
+let 1name; // wrong
+
+* No spaces allowed
+let user name; // wrong
+
+* Cannot use reserved keywords
+let let = 5; // wrong
+
+
+## 📌 4. Operators in JavaScript
+
+Operators are used to perform operations on values and variables.
+
+### Types of Operators:
+* Arithmetic Operators
+* Assignment Operators
+* Comparison Operators
+* Logical Operators
+
+(For today, focus is on Arithmetic Operators)
+
+## 📌 5. Arithmetic Operators
+
+Used for mathematical calculations.
+
+Operators:
+Operator	Meaning	                Example
++	        Addition	            5 + 3 = 8
+-	        Subtraction	            5 - 3 = 2
+*	        Multiplication	        5 * 3 = 15
+/	        Division	            6 / 2 = 3
+%	        Modulus (remainder)	    5 % 2 = 1
+**	        Exponent	            2 ** 3 = 8
+
+
+## 📌 Summary of the Day
+
+### Today I learned about:
+
+* JavaScript data types (string, number, boolean)
+* Variables and how to declare them
+* Rules for naming variables properly
+* Different types of operators
+* Arithmetic operators with examples.
