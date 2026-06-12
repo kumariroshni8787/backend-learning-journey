@@ -50,3 +50,45 @@
 ## Summary
 
 Aaj backend development ka overview mila aur JavaScript, Node.js, Express.js, MongoDB, API, JWT, bcrypt, file upload aur Cloudinary ke basic concepts ke baare me jana.
+
+
+
+
+#  Day 02 - JavaScript & Software Basics
+
+## 1. What we can do with JavaScript
+* JavaScript se hum websites interactive bana sakte hain
+* Backend development (Node.js ke through) kar sakte hain
+* Mobile apps (React Native jaise frameworks se) bana sakte hain
+* Desktop apps (Electron.js se) bana sakte hain
+* Web applications develop kar sakte hain
+
+## 2. How apps are made (Basic idea)
+* Mobile App → Android / iOS ke liye apps (React Native, Flutter etc.)
+* Desktop App → Windows/Mac/Linux apps (Electron.js, Java, C# etc.)
+* Web App → Browser me chalne wale apps (React, Angular, Node.js etc.)
+
+👉 VS Code bhi ek desktop application hai jo Electron.js se bana hai.
+
+## 3. Compiler vs Interpreter
+### Compiler
+* Poora code ek saath translate karta hai machine language me
+* Execution fast hota hai
+* Errors compile time pe milte hain
+* Example: C, C++
+
+### Interpreter
+* Code line by line execute karta hai
+* Execution thoda slow hota hai
+* Error turant line by line milta hai
+* Example: JavaScript, Python
+
+👉 JavaScript mostly interpreter-based language hai.
+
+## 4. What is a Program?
+
+A program is a set of instructions given to a computer to perform a specific task.
+
+### 📌 Day 02 Summary
+
+Aaj humne jaana ki JavaScript se kya kya ban sakta hai, different types of applications (mobile, desktop, web) ka basic idea mila, aur compiler vs interpreter ka difference samjha.
