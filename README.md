@@ -852,3 +852,74 @@ Today’s practice focuses on while loops and nested while loops to strengthen l
 ## 🧠 Summary of Day 14
 
 Today I practiced basic and nested while loops, including number printing, reverse counting, multiplication tables, and simple star patterns. This helped strengthen loop logic and control flow understanding.
+
+
+
+
+# 📘 Day 15: JavaScript For Loop
+
+🧠 Topic: For Loop in JavaScript
+
+A for loop is used when we want to repeat a block of code a specific number of times.
+
+It is one of the most commonly used loops in JavaScript.
+
+## 🔁 Syntax of For Loop
+
+for (initialization; condition; increment/decrement) {
+    // code to be executed
+}
+
+
+## 🔍 Explanation:
+
+* initialization → runs once at the start (e.g., let i = 0)
+* condition → loop runs as long as this is true
+* increment/decrement → updates loop counter after each iteration
+
+## 💡 Example 1: Basic For Loop
+for (let i = 1; i <= 5; i++) {
+    console.log("Number:", i);
+}
+
+### Output:
+Number: 1  
+Number: 2  
+Number: 3  
+Number: 4  
+Number: 5  
+
+## 📦 Example 2: Loop through an array
+
+let fruits = ["apple", "banana", "mango"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+### Output:
+apple  
+banana  
+mango  
+
+## ⚙️ How it works step by step
+
+Example:
+
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+}
+i = 0 → prints 0
+i = 1 → prints 1
+i = 2 → prints 2
+i = 3 → loop stops (condition false)
+
+## 🚀 Key Points
+* Used for repeating tasks
+* Best when number of iterations is known
+* Commonly used with arrays and strings
+* Easy to control using counter variable
+
+## 🧾 Summary (Day 15)
+
+Today I learned about the for loop in JavaScript, how it works, its syntax, and how to use it for repeating tasks and looping through arrays. It is a fundamental concept used in backend development for handling repetitive operations efficiently.
