@@ -1121,3 +1121,91 @@ console.log(text.split(","));
 ## 🧾 Summary (Day 18)
 
 Today I learned about JavaScript strings and important string methods like length, toUpperCase, trim, slice, replace, includes, and split. These methods are very useful for handling text data in backend development.
+
+
+
+
+# 📘 Day 19: JavaScript Objects
+🧠 Topic: Objects in JavaScript
+
+An object is a collection of key-value pairs.
+It is used to store multiple related data in a single variable.
+
+Objects are very important in backend development because APIs, databases, and real-world data are mostly structured as objects.
+
+## 📦 Object Syntax
+
+let person = {
+    name: "Rahul",
+    age: 20,
+    city: "Ranchi"
+};
+
+* Key → name, age, city
+* Value → "Rahul", 20, "Ranchi"
+
+## 🔍 Accessing Object Values
+
+1. Dot notation
+console.log(person.name);
+
+2. Bracket notation
+console.log(person["age"]);
+
+## ✏️ Adding New Properties
+person.gender = "Male";
+console.log(person);
+
+## ✏️ Updating Values
+person.age = 21;
+console.log(person);
+
+## ❌ Deleting Properties
+delete person.city;
+console.log(person);
+
+## 🔁 Looping Through Object
+for...in loop
+let car = {
+    brand: "Toyota",
+    model: "Innova",
+    year: 2020
+};
+
+for (let key in car) {
+    console.log(key, ":", car[key]);
+}
+
+## 📦 Nested Object
+let student = {
+    name: "Amit",
+    marks: {
+        math: 80,
+        science: 90,
+        english: 85
+    }
+};
+
+console.log(student.marks.science);
+
+## 🧠 Object with Function (Method)
+let user = {
+    name: "Raj",
+    greet: function () {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+
+user.greet();
+
+## 🚀 Real Use Cases of Objects
+
+* Storing user data
+* API responses (JSON format)
+* Database records
+* Configuration settings
+* Backend data modeling
+
+## 🧾 Summary (Day 19)
+
+Today I learned about JavaScript objects, which are used to store structured data in key-value pairs. I practiced accessing, updating, deleting, looping through objects, and using nested objects and methods. Objects are very important in backend development and real-world applications.

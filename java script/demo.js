@@ -1,35 +1,25 @@
-let str = "   I am Learning JavaScript Backend   ";
+let employee = {
+    name: "Suresh",
+    age: 28,
+    role: "Backend Developer",
+    salary: 50000,
+    skills: ["JavaScript", "Node.js", "MongoDB"]
+};
 
-console.log("Original String:", str);
+// Access
+console.log("Name:", employee.name);
+console.log("Role:", employee.role);
 
-// trim
-str = str.trim();
-console.log("After trim:", str);
+// Update
+employee.salary = 60000;
 
-// uppercase
-console.log("Uppercase:", str.toUpperCase());
+// Add new property
+employee.experience = 3;
 
-// lowercase
-console.log("Lowercase:", str.toLowerCase());
-
-// length
-console.log("Length:", str.length);
-
-// slice
-console.log("Slice (0-10):", str.slice(0, 10));
-
-// includes
-console.log("Includes 'Learning':", str.includes("Learning"));
-
-// replace
-console.log("Replace:", str.replace("JavaScript", "Node.js"));
-
-// split
-let words = str.split(" ");
-console.log("Split into words:", words);
-
-// charAt loop
-console.log("Characters:");
-for (let i = 0; i < str.length; i++) {
-    console.log(str.charAt(i));
+// Loop object
+for (let key in employee) {
+    console.log(key, "=>", employee[key]);
 }
+
+// Nested access (array inside object)
+console.log("First Skill:", employee.skills[0]);
