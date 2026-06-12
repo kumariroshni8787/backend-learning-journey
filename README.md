@@ -658,3 +658,29 @@ if (isLoggedIn) {
 * Used if, else, and else if
 * Understood decision-making in programming
 * Practiced real-world logic examples
+
+
+
+# 📘 Day 11 – Practice (Day 10: if, else, else if)
+🧠 Focus of the Day
+
+Today is a practice day based on JavaScript conditional statements:
+
+if
+else
+else if
+
+The goal is to improve logic building using real problems.
+
+
+## 📌 Key Learning
+* How to apply if-else logic in real problems
+* How multiple conditions work using else if
+* How to combine comparison operators (>, <, >=)
+* Basic problem-solving mindset for backend logic
+
+## 📌 Summary (Day 11)
+* Practiced conditional statements
+* Solved basic logic problems
+* Improved decision-making in JavaScript
+* Strengthened fundamentals for backend development
