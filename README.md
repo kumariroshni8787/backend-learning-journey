@@ -401,3 +401,65 @@ The sum of 10 and 20 is 30
 * Learned to add space between strings
 * Practiced mixing strings and numbers
 * Understood type conversion in JavaScript
+
+
+
+
+# 🧠 Day 7 Assignment Operators
+
+Assignment operators are used to assign values to variables and also modify them in a short way.
+
+## 2. Basic Assignment Operator
+
+🔹 =
+
+Used to assign a value.
+
+let x = 10;
+
+Here, value 10 is assigned to variable x.
+
+## 3. Compound Assignment Operators
+
+These operators combine arithmetic + assignment.
+
+### 🔹 += (Add and assign)
+let x = 10;
+x += 5;   // x = x + 5
+console.log(x); // 15
+
+### 🔹 -= (Subtract and assign)
+let x = 10;
+x -= 3;   // x = x - 3
+console.log(x); // 7
+
+### 🔹 *= (Multiply and assign)
+let x = 10;
+x *= 2;   // x = x * 2
+console.log(x); // 20
+
+### 🔹 /= (Divide and assign)
+let x = 10;
+x /= 2;   // x = x / 2
+console.log(x); // 5
+
+### 🔹 %= (Modulus and assign)
+let x = 10;
+x %= 3;   // x = x % 3
+console.log(x); // 1
+
+### 🔹 **= (Exponent and assign)
+let x = 2;
+x **= 3;  // x = x ** 3
+console.log(x); // 8
+
+
+## 💡 Important Points
+* Assignment operators reduce code length
+* They update the value of the same variable
+* Very commonly used in loops and backend logic
+
+
+## 📌 Day 7 Summary
+
+Today I learned about Assignment Operators in JavaScript. I studied the basic assignment operator = and compound operators like +=, -=, *=, /=, %= and **= which help in updating variable values in a shorter way.
